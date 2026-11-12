@@ -1,0 +1,23 @@
+# 環境變數與機密金鑰（絕對禁止上傳）
+.env
+.env.*
+!.env.example
+
+# Python 暫存與編譯檔
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虛擬環境
+venv/
+.venv/
+env/
+
+# Streamlit 本機設定（若包含 secrets.toml）
+.streamlit/secrets.toml
+
+# 作業系統與 IDE 雜訊
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

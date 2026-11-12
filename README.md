@@ -3,7 +3,6 @@
 一個基於 **風險導向弱點治理 (RBVM)** 方法論打造的自動化資安威脅儀表板。本工具即時整合美國 **CISA KEV**、**FIRST.org EPSS** 與 **NVD** 官方情資，透過「三階段篩選機制」協助資安與 IT 維運團隊突破傳統只看 CVSS 分數的盲點，將有限的修補資源精準投入在最危險的漏洞上。
 
 ## ✨ 核心功能與三階段篩選邏輯
-
 傳統僅依賴 CVSS 嚴重度（例如 ≥ 9.0 才修補）往往導致嚴重的告警疲勞，因為超過 70% 的高分漏洞從未在真實世界被武器化利用。本系統實作了業界標準的優先級評估模型：
 
 1. **🔴 階段 1：真實攻擊跡象 (`CISA KEV`)**
@@ -18,8 +17,11 @@
 
 ### 主要介面模組
 * **📖 系統介紹與篩選邏輯**：視覺化說明三階段 RBVM 治理架構與 SLA 建議。
+<img width="1903" height="933" alt="系統介紹與篩選邏輯" src="https://github.com/user-attachments/assets/61b10836-46c6-44dc-8ca5-5beb05d41670" />
 * **🔥 CISA KEV 動態威脅儀表板**：即時連線 CISA 官方 JSON Feed 與 EPSS API，提供 KPI 統計、風險分佈圖表、Top 10 受影響廠商排行與 CSV 報表匯出。
+<img width="1870" height="818" alt="CISA KEV 動態威脅儀表板" src="https://github.com/user-attachments/assets/965f742e-baba-422f-a25b-e12d9de37e46" />
 * **📝 自訂/批次輸入 CVE**：支援直接貼上任意文字或掃描報告（自動以正規表達式萃取 CVE 編號），一鍵產出優先級評估報告。
+<img width="1906" height="916" alt="自訂/批次輸入 CVE" src="https://github.com/user-attachments/assets/b970d884-949e-451b-8fb0-7ca54ff44a8a" />
 
 ---
 
